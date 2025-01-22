@@ -130,3 +130,66 @@
   }
 }
 
+/************************* Mini Tabs and Mobile Design ***********************/
+@media (max-width: 1023px) {
+  * {
+    font-size: 14px;
+  }
+
+  /******* Header Section CSS *****/
+  #header {
+    padding: 2rem;
+    font-family: "Open Sans", serif;
+  }
+
+  #logo img {
+    max-width: 124px;
+  }
+
+  #tryItBtn button {
+    width: 120px;
+    height: 32px;
+    border-radius: 20px;
+  }
+
+  /**************** Hero Section Styling ****************/
+  #hero-section {
+    background-image: url("./images/bg-hero-mobile.svg");
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #hero-section img {
+    margin-top: -36px;
+    max-width: 65vw;
+  }
+
+  #hero-text {
+    text-align: center;
+    width: 80vw;
+    height: 350px;
+    margin-top: 10vh;
+  }
+
+  #hero-header {
+    font-size: 1.9rem;
+  }
+
+  #hero-pera {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 2.2rem;
+  }
+
+  #hero-button {
+    margin-top: 46px;
+    padding: 22px 56px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 46px;
+    font-weight: 700;
+    color: var(--white);
+    cursor: pointer;
+  }
+}
