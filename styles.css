@@ -1,0 +1,40 @@
+/* Color Variables */
+:root {
+  --primary: hsl(322, 100%, 66%);
+  --veryPaleCyan: hsl(193, 100%, 96%);
+  --veryDarkCyan: hsl(192, 100%, 9%);
+  --greyishBlue: hsl(208, 11%, 55%);
+}
+
+* {
+  margin: 0;
+}
+
+/******* Header Section CSS *****/
+#header {
+  background-color: var(--veryPaleCyan);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 75px;
+  font-family: "Open Sans", serif;
+}
+
+#logo {
+}
+
+#tryItBtn button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+/* Mobile Version Design */
+@media (min-width: 375px) and (max-width: 1439px) {
+}
