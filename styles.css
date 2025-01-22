@@ -90,3 +90,43 @@
   cursor: pointer;
 }
 
+/************************* Tablets Design ***********************/
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /******* Header Section CSS *****/
+  #header {
+    padding: 2.5rem 3.4rem;
+  }
+
+  #logo img {
+    max-width: 11rem;
+  }
+
+  #hero-section img {
+    max-width: 47vw;
+    margin-left: 16px;
+    margin-top: -30px;
+  }
+
+  #hero-text {
+    width: 35vw;
+    height: 28vh;
+    margin-top: -105px;
+    margin-left: 10px;
+  }
+
+  #hero-header {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  #hero-pera {
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+  }
+
+  #hero-button {
+    font-size: 0.95rem;
+  }
+}
+
