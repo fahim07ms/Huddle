@@ -70,6 +70,7 @@
   font-family: "Poppins", serif;
   font-weight: 600;
   font-size: 3rem;
+  color: var(--veryDarkCyan);
 }
 
 #hero-pera {
@@ -88,6 +89,59 @@
   font-weight: 700;
   color: var(--white);
   cursor: pointer;
+}
+
+/****************** Info Cards Styling ********************/
+#info-cards {
+    width: 100vw;
+    margin-top: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 45px;
+    align-items: center;
+    z-index: 1000;
+}
+
+.info-card {
+    width: 75vw;
+    padding: 36px;
+    padding-left: calc(36px + 8vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+
+#info-card-2 {
+  flex-direction: row-reverse;
+}
+
+.info-card-text {
+    width: 32vw;
+}
+
+.info-card-text h2 {
+    font-family: 'Poppins', serif;
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--veryDarkCyan);
+}
+
+.info-card-text p {
+    margin-top: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--greyishBlue);
+}
+
+.info-card-illustration {
+    width: 35vw;
+}
+
+.info-card-illustration img {
+    max-width: 30vw;
 }
 
 /************************* Tablets Design ***********************/
