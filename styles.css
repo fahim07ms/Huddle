@@ -2,7 +2,7 @@
 :root {
   --primary: hsl(322, 100%, 66%);
   --white: hsl(0, 0%, 100%);
-  --veryPaleCyan: hsl(193, 100%, 96%);
+  --veryPaleCyan: hsl(192, 100%, 96%);
   --veryDarkCyan: hsl(192, 100%, 9%);
   --greyishBlue: hsl(208, 11%, 55%);
 }
@@ -142,6 +142,86 @@
 
 .info-card-illustration img {
     max-width: 30vw;
+}
+
+/******************* Footer Styling ********************/
+footer {
+  height: 540px;
+  background-color: var(--veryDarkCyan);
+  color: var(--veryPaleCyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 20vh;
+  padding: 440px 160px;
+  box-sizing: border-box;
+}
+
+#footer-content {
+  height: 240px;
+  display: flex;
+  gap: 12vw;
+  margin-top: 64px;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contact {
+  width: 25vw;
+  display: flex;
+  align-items: start;
+  gap: 28px;
+}
+
+img[src="./images/icon-location.svg"] {
+  padding-top: 7px;
+}
+
+.contact img {
+  width: 25px;
+  height: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--veryPaleCyan);
+  font-weight: 700;
+}
+
+#medias {
+  display: flex;
+  justify-content: space-between;
+  width: 8vw;
+}
+
+#medias img {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1.5px solid var(--veryPaleCyan);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#medias img:hover {
+  background-color: var(--primary);
+}
+
+#copyright-text {
+  align-self: end;
+  margin: 25px 50px;
 }
 
 /************************* Tablets Design ***********************/
