@@ -1,6 +1,7 @@
 /* Color Variables */
 :root {
   --primary: hsl(322, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
   --veryPaleCyan: hsl(193, 100%, 96%);
   --veryDarkCyan: hsl(192, 100%, 9%);
   --greyishBlue: hsl(208, 11%, 55%);
@@ -8,19 +9,21 @@
 
 * {
   margin: 0;
+  font-family: "Open Sans", serif;
+  font-size: 18px;
 }
 
 /******* Header Section CSS *****/
 #header {
-  background-color: var(--veryPaleCyan);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 75px;
+  padding: 2.78rem 4.17rem;
   font-family: "Open Sans", serif;
 }
 
-#logo {
+#logo img {
+  max-width: 200px;
 }
 
 #tryItBtn button {
@@ -29,12 +32,61 @@
   border-radius: 25px;
   border: none;
   background-color: #fff;
-  font-size: 18px;
   font-weight: 800;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
 }
 
-/* Mobile Version Design */
-@media (min-width: 375px) and (max-width: 1439px) {
+/**************** Hero Section Styling ****************/
+#hero-section {
+  width: 100vw;
+  height: 960px;
+  background-color: var(--veryPaleCyan);
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+#hero-section img {
+  max-width: 47vw;
+  margin-top: 100px;
+  margin-left: 16px;
+}
+
+#hero-text {
+  width: 35vw;
+  height: 28vh;
+  margin-top: -105px;
+}
+
+#hero-header {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+#hero-pera {
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
+#hero-button {
+  margin-top: 46px;
+  padding: 22px 56px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 46px;
+  font-weight: 700;
+  color: var(--white);
+  cursor: pointer;
+}
+
