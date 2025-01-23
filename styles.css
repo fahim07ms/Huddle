@@ -68,7 +68,7 @@
 
 #hero-header {
   font-family: "Poppins", serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 3rem;
   color: var(--veryDarkCyan);
 }
@@ -93,25 +93,25 @@
 
 /****************** Info Cards Styling ********************/
 #info-cards {
-    width: 100vw;
-    margin-top: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 45px;
-    align-items: center;
-    z-index: 1000;
+  width: 100vw;
+  margin-top: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 45px;
+  align-items: center;
+  z-index: 1000;
 }
 
 .info-card {
-    width: 75vw;
-    padding: 36px;
-    padding-left: calc(36px + 8vw);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 20px;
+  width: 75vw;
+  padding: 36px;
+  padding-left: calc(36px + 8vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
 }
 
 #info-card-2 {
@@ -119,30 +119,30 @@
 }
 
 .info-card-text {
-    width: 32vw;
+  width: 32vw;
 }
 
 .info-card-text h2 {
-    font-family: 'Poppins', serif;
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--veryDarkCyan);
+  font-family: "Poppins", serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--veryDarkCyan);
 }
 
 .info-card-text p {
-    margin-top: 24px;
-    font-size: 1.15rem;
-    font-weight: 400;
-    color: var(--greyishBlue);
-    line-height: 1.7rem;
+  margin-top: 24px;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--greyishBlue);
+  line-height: 1.7rem;
 }
 
 .info-card-illustration {
-    width: 35vw;
+  width: 35vw;
 }
 
 .info-card-illustration img {
-    max-width: 30vw;
+  max-width: 30vw;
 }
 
 /************** Invite Card Styling *******************/
@@ -162,7 +162,7 @@
 }
 
 #invite-card h2 {
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-size: 42px;
   font-weight: 800;
   color: var(--veryDarkCyan);
@@ -275,6 +275,7 @@ img[src="./images/icon-location.svg"] {
     max-width: 11rem;
   }
 
+  /*************  Hero Section CSS Styling *****************/
   #hero-section img {
     max-width: 47vw;
     margin-left: 16px;
@@ -289,8 +290,6 @@ img[src="./images/icon-location.svg"] {
   }
 
   #hero-header {
-    font-family: "Poppins", serif;
-    font-weight: 600;
     font-size: 2rem;
   }
 
@@ -301,6 +300,119 @@ img[src="./images/icon-location.svg"] {
 
   #hero-button {
     font-size: 0.95rem;
+  }
+
+  /****************** Info Cards Styling ********************/
+  #info-cards {
+    margin-top: 70vh;
+  }
+
+  .info-card-text {
+    width: 32vw;
+  }
+
+  .info-card-text h2 {
+    font-size: 1.85rem;
+  }
+
+  .info-card-text p {
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+  }
+
+  .info-card-illustration {
+    width: 34vw;
+  }
+
+  /************** Invite Card Styling *******************/
+  #invite-card {
+    width: 60vw;
+    height: 20vh;
+    margin: 15vh auto -7vh;
+  }
+
+  #invite-card h2 {
+    font-size: 1.75rem;
+  }
+
+  #invite-card button {
+    width: 360px;
+  }
+
+  /******************* Footer Styling ********************/
+  footer {
+    height: 600px;
+    padding: 420px 80px 420px 80px;
+  }
+
+  #footer-content {
+    height: 240px;
+    display: flex;
+    gap: 12vw;
+    margin-top: 64px;
+  }
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .contact {
+    width: 25vw;
+    display: flex;
+    align-items: start;
+    gap: 28px;
+  }
+
+  img[src="./images/icon-location.svg"] {
+    padding-top: 7px;
+  }
+
+  .contact img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .links {
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: var(--veryPaleCyan);
+    font-weight: 700;
+  }
+
+  #medias {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    align-content: end;
+  }
+
+  #medias img {
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid var(--veryPaleCyan);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #medias img:hover {
+    background-color: var(--primary);
+  }
+
+  #copyright-text {
+    align-self: end;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 32px;
   }
 }
 
@@ -313,7 +425,6 @@ img[src="./images/icon-location.svg"] {
   /******* Header Section CSS *****/
   #header {
     padding: 2rem;
-    font-family: "Open Sans", serif;
   }
 
   #logo img {
