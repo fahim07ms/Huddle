@@ -38,6 +38,12 @@
   font-weight: 800;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#tryItBtn button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /**************** Hero Section Styling ****************/
@@ -68,6 +74,7 @@
   width: 35vw;
   height: 28vh;
   margin-top: -105px;
+  
 }
 
 #hero-header {
@@ -93,6 +100,7 @@
   font-weight: 700;
   color: var(--white);
   cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /****************** Info Cards Styling ********************/
@@ -184,6 +192,12 @@
   font-weight: 700;
   color: var(--white);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#invite-card button:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /******************* Footer Styling ********************/
@@ -226,6 +240,12 @@ footer {
   display: flex;
   align-items: start;
   gap: 28px;
+  text-decoration: none;
+  color: var(--veryPaleCyan);
+}
+
+.contact:hover {
+  color: var(--greyishBlue);
 }
 
 img[src="./images/icon-location.svg"] {
@@ -241,6 +261,10 @@ img[src="./images/icon-location.svg"] {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.links a:hover {
+  color: var(--greyishBlue);
 }
 
 .links a {
@@ -549,7 +573,6 @@ img[src="./images/icon-location.svg"] {
     margin-top: auto;
   }
 }
-
 
 /************************* Mobile Design ***********************/
 @media (max-width: 699px) {
