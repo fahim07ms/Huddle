@@ -164,6 +164,7 @@
   position: relative;
   z-index: 2;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 #invite-card h2 {
@@ -388,8 +389,169 @@ img[src="./images/icon-location.svg"] {
   }
 }
 
-/************************* Mini Tabs and Mobile Design ***********************/
-@media (max-width: 1023px) {
+/************************* Mini Tabs and Large Mobile Design ***********************/
+@media (max-width: 1023px) and (min-width: 700px) {
+  * {
+    font-size: 16px;
+  }
+  /* ****** Header Section CSS ****
+  #header {
+    padding: 36px;
+  }
+
+  #logo img {
+    max-width: 124px;
+  }
+
+  #tryItBtn button {
+    width: 120px;
+    height: 32px;
+    border-radius: 20px;
+  } */
+
+  /**************** Hero Section Styling ****************/
+  #hero-section {
+    background-image: url("./images/bg-hero-mobile.svg");
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #hero-section img {
+    margin-top: -20px;
+    max-width: 65vw;
+  }
+
+  #hero-text {
+    text-align: center;
+    width: 75vw;
+    height: 350px;
+    margin-top: 12vh;
+  }
+
+  #hero-header {
+    font-size: 1.9rem;
+  }
+
+  #hero-pera {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 2.2rem;
+  }
+
+  #hero-button {
+    margin-top: 46px;
+    padding: 22px 56px;
+  }
+
+  /****************** Info Cards Styling ********************/
+  #info-cards {
+    width: 100vw;
+    padding-top: 960px;
+    gap: 45px;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 90%;
+    min-height: 580px;
+    padding: 25px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  #info-card-2 {
+    flex-direction: column-reverse;
+  }
+
+  .info-card-text {
+    width: 90%;
+  }
+
+  .info-card-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-card-text p {
+    margin-top: 24px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+
+  .info-card-illustration {
+    width: 80%;
+  }
+
+  .info-card-illustration img {
+    max-width: 65%;
+  }
+
+  /************** Invite Card Styling *******************/
+  #invite-card {
+    width: 540px;
+    height: 180px;
+    margin: 20vh auto -10vh;
+    justify-content: space-evenly;
+  }
+
+  #invite-card h2 {
+    font-size: 1.35rem;
+  }
+
+  #invite-card button {
+    width: 220px;
+    height: 48px;
+  }
+
+  /******************* Footer Styling ********************/
+  footer {
+    height: 800px;
+    padding: 180px 75px;
+  }
+
+  #footer-div {
+    height: 600px;
+  }
+
+  #footer-content {
+    height: 240px;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: max-content auto;
+    margin-top: 58px;
+    grid-column-gap: 30px;
+    grid-row-gap: 160px;
+  }
+
+  .contact {
+    width: 300px;
+    gap: 24px;
+  }
+
+  .links {
+    justify-self: center;
+  }
+
+  #medias {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    align-content: end;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  #copyright-text {
+    align-self: center;
+    margin-top: auto;
+  }
+}
+
+
+/************************* Mobile Design ***********************/
+@media (max-width: 699px) {
   * {
     font-size: 14px;
   }
@@ -491,14 +653,14 @@ img[src="./images/icon-location.svg"] {
 
   /************** Invite Card Styling *******************/
   #invite-card {
-    width: 360px;
+    width: clamp(320px, 80%, 90%);
     height: 180px;
     margin: 20vh auto -10vh;
     justify-content: space-evenly;
   }
 
   #invite-card h2 {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
 
   #invite-card button {
