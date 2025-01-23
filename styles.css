@@ -181,24 +181,31 @@
 
 /******************* Footer Styling ********************/
 footer {
-  height: 320px;
+  width: 100vw;
+  height: 600px;
+  padding: 120px 120px 0px;
+  margin: 0;
   background-color: var(--veryDarkCyan);
-  color: var(--veryPaleCyan);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  position: relative;
-  z-index: 1;
-  padding: 420px 80px 420px 80px;
   box-sizing: border-box;
 }
 
-#footer-content {
-  height: 240px;
+#footer {
+  color: var(--veryPaleCyan);
   display: flex;
-  gap: 12vw;
-  margin-top: 64px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+#footer-content {
+  width: 100%;
+  height: 240px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10vw;
+  margin-top: 58px;
 }
 
 #contacts {
@@ -208,7 +215,6 @@ footer {
 }
 
 .contact {
-  width: 25vw;
   display: flex;
   align-items: start;
   gap: 28px;
@@ -224,7 +230,6 @@ img[src="./images/icon-location.svg"] {
 }
 
 .links {
-  width: 6vw;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -239,7 +244,6 @@ img[src="./images/icon-location.svg"] {
 #medias {
   display: flex;
   justify-content: space-evenly;
-  width: 15vw;
   align-content: end;
 }
 
@@ -261,7 +265,7 @@ img[src="./images/icon-location.svg"] {
   align-self: end;
   font-size: 14px;
   font-weight: 400;
-  margin-right: 32px;
+  margin-top: 10px;
 }
 
 /************************* Tablets Design ***********************/
@@ -327,7 +331,7 @@ img[src="./images/icon-location.svg"] {
   /************** Invite Card Styling *******************/
   #invite-card {
     width: 60vw;
-    height: 20vh;
+    height: 280px;
     margin: 15vh auto -7vh;
   }
 
@@ -341,15 +345,23 @@ img[src="./images/icon-location.svg"] {
 
   /******************* Footer Styling ********************/
   footer {
-    height: 600px;
-    padding: 420px 80px 420px 80px;
+    height: 800px;
+    padding-top: 180px;
+  }
+  
+  #footer {
+   height: 600px; 
   }
 
   #footer-content {
     height: 240px;
-    display: flex;
-    gap: 12vw;
-    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: max-content auto;
+    margin-top: 58px;
+    grid-column-gap: 8vw;
+    grid-row-gap: 160px;
+
   }
 
   #contacts {
@@ -359,32 +371,14 @@ img[src="./images/icon-location.svg"] {
   }
 
   .contact {
-    width: 25vw;
-    display: flex;
-    align-items: start;
-    gap: 28px;
-  }
-
-  img[src="./images/icon-location.svg"] {
-    padding-top: 7px;
-  }
-
-  .contact img {
-    width: 25px;
-    height: 25px;
+    width: 360px;
+    gap: 24px;
   }
 
   .links {
-    width: 6vw;
     display: flex;
     flex-direction: column;
     gap: 32px;
-  }
-
-  .links a {
-    text-decoration: none;
-    color: var(--veryPaleCyan);
-    font-weight: 700;
   }
 
   #medias {
@@ -392,27 +386,17 @@ img[src="./images/icon-location.svg"] {
     justify-content: space-evenly;
     width: 15vw;
     align-content: end;
+    grid-column: 1 / -1;
+    justify-self: center;
   }
 
   #medias img {
-    width: 28px;
-    height: 28px;
-    padding: 5px;
-    margin: 0 10px;
-    border: 1px solid var(--veryPaleCyan);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  #medias img:hover {
-    background-color: var(--primary);
+    
   }
 
   #copyright-text {
-    align-self: end;
-    font-size: 14px;
-    font-weight: 400;
-    margin-right: 32px;
+    align-self: center;
+    margin-top: auto;
   }
 }
 
