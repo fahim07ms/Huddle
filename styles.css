@@ -580,7 +580,7 @@ img[src="./images/icon-location.svg"] {
   }
 
   #hero-section img {
-    margin-top: -42px;
+    margin-top: 0;
     max-width: 70vw;
   }
 
@@ -640,7 +640,7 @@ img[src="./images/icon-location.svg"] {
 
   .info-card-text p {
     margin-top: 24px;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     line-height: 1.9rem;
   }
 
