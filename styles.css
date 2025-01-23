@@ -190,7 +190,7 @@ footer {
   align-items: start;
   position: relative;
   z-index: 1;
-  padding: 420px 160px;
+  padding: 420px 80px 420px 80px;
   box-sizing: border-box;
 }
 
@@ -224,6 +224,7 @@ img[src="./images/icon-location.svg"] {
 }
 
 .links {
+  width: 6vw;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -237,8 +238,9 @@ img[src="./images/icon-location.svg"] {
 
 #medias {
   display: flex;
-  justify-content: space-between;
-  width: 8vw;
+  justify-content: space-evenly;
+  width: 15vw;
+  align-content: end;
 }
 
 #medias img {
@@ -259,6 +261,7 @@ img[src="./images/icon-location.svg"] {
   align-self: end;
   font-size: 14px;
   font-weight: 400;
+  margin-right: 32px;
 }
 
 /************************* Tablets Design ***********************/
