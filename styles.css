@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.78rem 4.17rem;
+  padding: 49px 67px;
   font-family: "Open Sans", serif;
   box-sizing: border-box;
   position: relative;
@@ -56,7 +56,6 @@
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 150px;
 }
 
 #hero-section img {
@@ -279,7 +278,7 @@ img[src="./images/icon-location.svg"] {
 @media (min-width: 1024px) and (max-width: 1440px) {
   /******* Header Section CSS *****/
   #header {
-    padding: 2.5rem 3.4rem;
+    padding: 45px 62px;
   }
 
   #logo img {
@@ -296,7 +295,7 @@ img[src="./images/icon-location.svg"] {
   #hero-text {
     width: 35vw;
     height: 28vh;
-    margin-top: -105px;
+    margin-top: -200px;
     margin-left: 10px;
   }
 
@@ -315,7 +314,7 @@ img[src="./images/icon-location.svg"] {
 
   /****************** Info Cards Styling ********************/
   #info-cards {
-    margin-top: 70vh;
+    padding-top: 960px;
   }
 
   .info-card-text {
@@ -397,7 +396,7 @@ img[src="./images/icon-location.svg"] {
 
   /******* Header Section CSS *****/
   #header {
-    padding: 2rem;
+    padding: 36px;
   }
 
   #logo img {
@@ -418,15 +417,15 @@ img[src="./images/icon-location.svg"] {
   }
 
   #hero-section img {
-    margin-top: -36px;
+    margin-top: -20px;
     max-width: 65vw;
   }
 
   #hero-text {
     text-align: center;
-    width: 80vw;
+    width: 75vw;
     height: 350px;
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
 
   #hero-header {
@@ -448,14 +447,14 @@ img[src="./images/icon-location.svg"] {
   /****************** Info Cards Styling ********************/
   #info-cards {
     width: 100vw;
-    margin-top: 120vh;
+    padding-top: 960px;
     gap: 45px;
     align-items: center;
   }
 
   .info-card {
     width: 90%;
-    height: 580px;
+    min-height: 580px;
     padding: 10px;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -483,11 +482,11 @@ img[src="./images/icon-location.svg"] {
   }
 
   .info-card-illustration {
-    width: 90%;
+    width: 80%;
   }
 
   .info-card-illustration img {
-    max-width: 85%;
+    max-width: 65%;
   }
 
   /************** Invite Card Styling *******************/
