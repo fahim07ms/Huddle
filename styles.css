@@ -189,7 +189,7 @@ footer {
   box-sizing: border-box;
 }
 
-#footer {
+#footer-div {
   color: var(--veryPaleCyan);
   display: flex;
   flex-direction: column;
@@ -348,37 +348,23 @@ img[src="./images/icon-location.svg"] {
     height: 800px;
     padding-top: 180px;
   }
-  
-  #footer {
-   height: 600px; 
+
+  #footer-div {
+    height: 600px;
   }
 
   #footer-content {
     height: 240px;
-    display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: max-content auto;
     margin-top: 58px;
     grid-column-gap: 8vw;
     grid-row-gap: 160px;
-
-  }
-
-  #contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
   }
 
   .contact {
     width: 360px;
     gap: 24px;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
   }
 
   #medias {
@@ -388,10 +374,6 @@ img[src="./images/icon-location.svg"] {
     align-content: end;
     grid-column: 1 / -1;
     justify-self: center;
-  }
-
-  #medias img {
-    
   }
 
   #copyright-text {
@@ -454,11 +436,121 @@ img[src="./images/icon-location.svg"] {
   #hero-button {
     margin-top: 46px;
     padding: 22px 56px;
-    background-color: var(--primary);
-    border: none;
-    border-radius: 46px;
-    font-weight: 700;
-    color: var(--white);
-    cursor: pointer;
+  }
+
+  /****************** Info Cards Styling ********************/
+  #info-cards {
+    width: 100vw;
+    margin-top: 120vh;
+    gap: 45px;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 90%;
+    height: 580px;
+    padding: 10px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  #info-card-2 {
+    flex-direction: column-reverse;
+  }
+
+  .info-card-text {
+    width: 90%;
+  }
+
+  .info-card-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-card-text p {
+    margin-top: 24px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+
+  .info-card-illustration {
+    width: 90%;
+  }
+
+  .info-card-illustration img {
+    max-width: 85%;
+  }
+
+  /************** Invite Card Styling *******************/
+  #invite-card {
+    width: 360px;
+    height: 180px;
+    margin: 20vh auto -10vh;
+    justify-content: space-evenly;
+  }
+
+  #invite-card h2 {
+    font-size: 1.35rem;
+  }
+
+  #invite-card button {
+    width: 220px;
+    height: 48px;
+  }
+
+  /******************* Footer Styling ********************/
+  footer {
+    width: 100vw;
+    height: 800px;
+    padding: 160px 20px 0;
+  }
+
+  #footer-content {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    gap: 18px;
+    margin-top: 28px;
+  }
+
+  #contacts {
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    display: flex;
+    line-height: 1.7rem;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .contact img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .links {
+    gap: 18px;
+  }
+
+  #medias {
+    display: flex;
+    justify-content: center;
+    align-content: end;
+  }
+
+  #medias img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+  }
+
+  #copyright-text {
+    align-self: center;
+    margin-top: auto;
   }
 }
