@@ -172,6 +172,7 @@
   font-size: 42px;
   font-weight: 800;
   color: var(--veryDarkCyan);
+  text-align: center;
 }
 
 #invite-card button {
@@ -579,8 +580,8 @@ img[src="./images/icon-location.svg"] {
   }
 
   #hero-section img {
-    margin-top: -20px;
-    max-width: 65vw;
+    margin-top: -42px;
+    max-width: 70vw;
   }
 
   #hero-text {
@@ -603,7 +604,7 @@ img[src="./images/icon-location.svg"] {
 
   #hero-button {
     margin-top: 46px;
-    padding: 22px 56px;
+    padding: 16px 42px;
   }
 
   /****************** Info Cards Styling ********************/
