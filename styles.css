@@ -72,7 +72,7 @@
 
 #hero-text {
   width: 35vw;
-  height: 28vh;
+  height: max-content;
   margin-top: -105px;
   
 }
